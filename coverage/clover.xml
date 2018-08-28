@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1535415000885" clover="3.2.0">
+  <project timestamp="1535415000885" name="All files">
+    <metrics statements="24" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="4" elements="36" coveredelements="15" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3">
+      <file name="App.js" path="/Users/abhsharm3/ssr-react-router-node-app/app/components/App.js">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="Home.js" path="/Users/abhsharm3/ssr-react-router-node-app/app/components/Home.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="SliderCarousel.js" path="/Users/abhsharm3/ssr-react-router-node-app/app/components/SliderCarousel.js">
+        <metrics statements="19" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

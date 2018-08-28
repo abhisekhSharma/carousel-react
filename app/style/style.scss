@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    color: #276696;
+}
+.main-c {
+    position: relative;
+}
+.wrapper {
+
+    position: relative;
+    @media only screen and (min-width: 481px) and (max-width: 768px){
+
+    }
+        .slider {
+            height: 280px;
+           
+         @media only screen and (min-width: 480px) and (max-width: 2200px){
+            width:160px;
+            float: left;
+            border: 1px solid #70c4a2;
+            height: 160px;
+            overflow:hidden;
+            }
+        @media only screen and (min-width: 481px) and (max-width: 768px){
+                width: 200px;
+                height: 168px;
+        }
+
+            img {
+                @media only screen and (min-width: 480px) and (max-width: 2200px){
+                    width: 160px;
+                }
+                @media only screen and (min-width: 481px) and (max-width: 768px){
+                    width: 200px;
+                }
+                &:nth-child(3){
+                    -ms-transform: scale(1.4);
+                    -webkit-transform: scale(1.4);
+                    transform: scale(1.4);
+                }
+            }
+            p {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+     
+}
+.selected {
+background: red 
+}
+.container {
+    height: 280px; overflow: hidden; width: 100%; margin: auto;
+   
+    @media only screen and (min-width: 480px) and (max-width: 2200px) {
+        width: 811px;
+        height: 170px;
+        overflow: hidden;
+        margin: auto;
+
+    }
+    @media only screen and (min-width: 425px) and (max-width: 768px){
+        width: 606px;
+    }
+}
+
+.btn-container {
+   
+    margin-top: 20px;
+    position: absolute;
+    top: 26%;
+    width: 100%;
+    @media only screen and (min-width: 425px) and (max-width: 2200px) {
+        position: relative;
+        top: auto;
+        text-align: center;
+
+    }
+
+    input.prev {
+        background:#fff;
+        opacity: .5;
+        height: 63px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-right: 5px;
+        padding: 0 20px 0 20px;
+        background-image: url("../assets/arrow-prv.svg");
+        background-repeat: no-repeat;
+        background-position: 3px center;
+        background-size: 50%;
+        font-size: 0;
+        @media only screen and (min-width: 425px) and (max-width: 2200px) {
+            background: #3f729d;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            opacity: 1;
+            font-size: 15px;
+            height: 48px;
+            background-image: none;
+            
+        }
+    }
+    input.next {
+        right: 0px;
+        position: absolute;
+        background:#fff;
+        opacity: .5;
+        height: 63px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        margin-left: 5px;
+        padding: 0 20px 0 20px;
+        background-image: url("../assets/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 19px center;
+        background-size: 50%;
+        font-size: 0;
+        @media only screen and (min-width: 425px) and (max-width: 2200px) {
+            position: relative;
+            right: auto;
+            background: #3f729d;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            opacity: 1;
+            background-image:none;
+            font-size: 15px;
+            height: 48px;
+            
+        }
+    }
+}
+
+.img-cont {
+    width:100%; height:200px; overflow:hidden;
+    @media only screen and (min-width: 480px) and (max-width: 2200px) {
+        height:89px;
+
+    }
+    @media only screen and (min-width: 425px) and (max-width: 768px){
+        height:89px;
+    }
+    img:nth-child(3){
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+   
+}

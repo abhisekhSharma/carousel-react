@@ -1,0 +1,54 @@
+import { renderToString } from 'react-dom/server'
+import React from 'react';
+import { matchPath, StaticRouter } from 'react-router-dom';
+
+import routes from './routes';
+import renderFullPage from './renderFullPage';
+import getPokemon from '../services/getPokemon';
+import getPicture from '../services/getPicture';
+import App from '../components/App';
+
+export default function router(req, res) {
+    //console.log('router',req.url )
+    const match = routes.reduce((acc, route) => matchPath(req.url, { path: route, exact: true }) || acc, null);
+    if (!match) {
+        res.status(404).send('page not found');
+        return;
+    }
+    // if (match.path === '/pokemon') {
+    // return getPokemon.withAbility('telepathy')
+    //     .then(resp => {
+    //         const pokemon = { list: resp.data.pokemon } ;
+            
+    //         const context = {}
+            
+    //         const html = renderToString(
+    //             <StaticRouter context={context} location={req.url} >
+    //                 <App pokemon={pokemon}/>
+    //             </StaticRouter>
+    //         )
+    //         console.log(html);
+    //         res.status(200).send(renderFullPage(html, pokemon));
+    //     })
+    //     .catch(err => res.status(404).send(`${err}: Oh No! I cannot find the telepathic pokemon... maybe they knew we were coming!`));
+    // };
+  
+
+        return getPicture.withPictute()
+        .then(resp => {
+            const payload = { list: resp.data.hits };
+            const context = {}
+            
+            const html = renderToString(
+                <StaticRouter context={context} location={req.url} >
+                    <App payload={payload}/>
+                </StaticRouter>
+            )
+            //console.log(html);
+            res.status(200).send(renderFullPage(html, payload));
+        })
+        .catch(err => res.status(404).send(`${err}: Oh No! getpicture not found !`));
+
+    
+    
+};
