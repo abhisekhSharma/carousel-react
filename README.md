@@ -39,3 +39,12 @@ Accessibility
 ---------------
 
 Page has been tested through WAVE browser plugin for Accessibility and its not complaining about any error
+
+WIP- TODO -Enhansment
+----------------------
+
+code is still in progress to making the slider selected in middle. 
+
+Logic -  calculate the visible slide number and then fetch the middle slide and make it slected. for all view port
+
+This is very simple with CSS as per media query and wanted to make is dynamicly by Component state.
