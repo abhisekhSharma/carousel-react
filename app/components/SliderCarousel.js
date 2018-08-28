@@ -1,3 +1,6 @@
+/*
+This component is rendering teh carousel and attaching the event of next and previous
+*/
 import React from 'react';
 
 class SliderCarousel extends React.Component {
@@ -12,6 +15,7 @@ class SliderCarousel extends React.Component {
         this.prev = this.prev.bind(this);
     }
     
+    // Next button event handler
     next() {
         this.setState({
             counter: this.state.counter+1,
@@ -23,6 +27,7 @@ class SliderCarousel extends React.Component {
         console.log(this.state.counter, this.divElement.lastChild);
     }
 
+    // Next button event handler
     prev() {
         this.divElement.lastChild.parentNode.insertBefore(this.divElement.lastChild,this.divElement.firstChild)
         this.divElement.style.left = 0+"px";
@@ -41,7 +46,7 @@ class SliderCarousel extends React.Component {
     
     render() {
         
-    //const { dimensions } = this.state;
+    //iterating carousel slide with payload object
     const payload = Object.keys(this.props.payload).map(key => 
     	<div key={key} id={key} className="slider"   ref={ (divSlider) => this.divSlider = divSlider}>
             <div className="img-cont"><img src={this.props.payload[key].largeImageURL} alt={this.props.payload[key].tags} /></div>

@@ -1,3 +1,4 @@
+/* This component have react router and this the main Parent component of this App */
 import React from 'react';
 import {
     BrowserRouter as Router,
