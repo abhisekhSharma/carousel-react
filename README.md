@@ -34,3 +34,8 @@ I have written basic test fodthis App:
 
 1) Test for check App is loading without crash
 2) Carousel is genrating slides as per response object coming from endpoint 
+
+Accessibility
+---------------
+
+Page has been tested through WAVE browser plugin for Accessibility and its not complaining about any error

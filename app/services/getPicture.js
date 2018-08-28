@@ -1,3 +1,7 @@
+/*
+The code is for sending request for get all the carousel information
+*/
+
 import request from 'axios';
 
 const getPicture = {

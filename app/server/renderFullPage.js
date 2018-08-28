@@ -1,7 +1,7 @@
 export default function renderFullPage(html, preloadedState) {
     return `
         <!doctype html>
-        <html>
+        <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <head>
             <title>Your SSR React Router Node App initialised with data!</title>
             <meta name="viewport" content="width=device-width">
