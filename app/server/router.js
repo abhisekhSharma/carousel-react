@@ -4,7 +4,7 @@ import { matchPath, StaticRouter } from 'react-router-dom';
 
 import routes from './routes';
 import renderFullPage from './renderFullPage';
-import getPokemon from '../services/getPokemon';
+//import getPokemon from '../services/getPokemon';
 import getPicture from '../services/getPicture';
 import App from '../components/App';
 
